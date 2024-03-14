@@ -30,7 +30,7 @@ export default function Navbar() {
   return (
     <>
       <Sidenav />
-      <nav className="fixed top-0 left-0 right-0 px-4 md:px-12 py-6 flex items-center justify-between bg-slate-900 bg-opacity-60 backdrop-blur-sm z-50">
+      <nav className="fixed top-0 w-full px-4 md:px-12 py-6 flex items-center justify-between bg-slate-900 bg-opacity-60 backdrop-blur-sm z-50">
         <Link href='/' className="text-4xl font-bold bg-gradient-to-br from-primary to-40% to-secondary inline-block text-transparent bg-clip-text">
           Soeltan
         </Link>
@@ -95,7 +95,7 @@ function Sidenav({ type = 'left' }) {
     return (
       <div className="z-50 fixed hidden md:flex flex-col left-0 top-1/2 -translate-y-1/2">
         {links.map(({ name, href, icon, style }, index) => (
-          <a href={href} key={index} className={`${style} text-gray-300 flex justify-between items-center px-4 py-2 -translate-x-[120px] hover:translate-x-0 duration-200 hover:rounded-r-lg`}>
+          <a href={href} key={index} className={`${style} text-gray-300 flex justify-between items-center px-4 py-2 -translate-x-[118px] hover:translate-x-0 duration-200 hover:rounded-r-lg`}>
             <h2 className="text-xl font-bold">
               {name}
             </h2>
